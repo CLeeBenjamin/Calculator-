@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		71ED8BF420DAC53500CD305E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED8BF320DAC53500CD305E /* AppDelegate.swift */; };
 		71ED8BF620DAC53500CD305E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED8BF520DAC53500CD305E /* ViewController.swift */; };
-		71ED8BF920DAC53500CD305E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71ED8BF720DAC53500CD305E /* Main.storyboard */; };
 		71ED8BFB20DAC53600CD305E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71ED8BFA20DAC53600CD305E /* Assets.xcassets */; };
 		71ED8BFE20DAC53600CD305E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71ED8BFC20DAC53600CD305E /* LaunchScreen.storyboard */; };
+		71ED8C0620DB2B7C00CD305E /* NamingConventions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED8C0520DB2B7C00CD305E /* NamingConventions.swift */; };
+		71ED8C0E20DB50A800CD305E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED8C0D20DB50A800CD305E /* Extension.swift */; };
+		71ED8C2120DD405A00CD305E /* OperationsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ED8C2020DD405A00CD305E /* OperationsArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71ED8BF020DAC53500CD305E /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71ED8BF320DAC53500CD305E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71ED8BF520DAC53500CD305E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		71ED8BF820DAC53500CD305E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71ED8BFA20DAC53600CD305E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71ED8BFD20DAC53600CD305E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71ED8BFF20DAC53600CD305E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71ED8C0520DB2B7C00CD305E /* NamingConventions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamingConventions.swift; sourceTree = "<group>"; };
+		71ED8C0D20DB50A800CD305E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		71ED8C2020DD405A00CD305E /* OperationsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				71ED8BF220DAC53500CD305E /* Calculator */,
+				71ED8C1220DBFBC300CD305E /* Resources */,
 				71ED8BF120DAC53500CD305E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +59,47 @@
 		71ED8BF220DAC53500CD305E /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				71ED8BF320DAC53500CD305E /* AppDelegate.swift */,
-				71ED8BF520DAC53500CD305E /* ViewController.swift */,
-				71ED8BF720DAC53500CD305E /* Main.storyboard */,
+				71ED8C1920DC019100CD305E /* Controller */,
+				71ED8C1320DBFBDC00CD305E /* View */,
+				71ED8C1120DBFBAA00CD305E /* Helper Files */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		71ED8C1120DBFBAA00CD305E /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				71ED8C0D20DB50A800CD305E /* Extension.swift */,
+				71ED8C0520DB2B7C00CD305E /* NamingConventions.swift */,
+				71ED8C2020DD405A00CD305E /* OperationsArray.swift */,
+			);
+			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		71ED8C1220DBFBC300CD305E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				71ED8BFA20DAC53600CD305E /* Assets.xcassets */,
+				71ED8BF320DAC53500CD305E /* AppDelegate.swift */,
 				71ED8BFC20DAC53600CD305E /* LaunchScreen.storyboard */,
 				71ED8BFF20DAC53600CD305E /* Info.plist */,
 			);
-			path = Calculator;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		71ED8C1320DBFBDC00CD305E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71ED8BF520DAC53500CD305E /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71ED8C1920DC019100CD305E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +162,6 @@
 			files = (
 				71ED8BFE20DAC53600CD305E /* LaunchScreen.storyboard in Resources */,
 				71ED8BFB20DAC53600CD305E /* Assets.xcassets in Resources */,
-				71ED8BF920DAC53500CD305E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +172,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71ED8C2120DD405A00CD305E /* OperationsArray.swift in Sources */,
+				71ED8C0620DB2B7C00CD305E /* NamingConventions.swift in Sources */,
 				71ED8BF620DAC53500CD305E /* ViewController.swift in Sources */,
 				71ED8BF420DAC53500CD305E /* AppDelegate.swift in Sources */,
+				71ED8C0E20DB50A800CD305E /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		71ED8BF720DAC53500CD305E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71ED8BF820DAC53500CD305E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		71ED8BFC20DAC53600CD305E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -281,7 +313,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Calculator/Info.plist;
+				DEVELOPMENT_TEAM = DEU5AX7577;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +331,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Calculator/Info.plist;
+				DEVELOPMENT_TEAM = DEU5AX7577;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
